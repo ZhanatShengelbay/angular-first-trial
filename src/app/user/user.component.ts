@@ -18,11 +18,11 @@ export class UserComponent {
   onTypeName(event: Event) {
     this.userName = (<HTMLInputElement>event.target).value;
 
-    while (this.userName.length > 0) {
+    if (this.userName.length) {
       this.usernameStatus = true;
     }
   }
-  onClickButton(event: Event) {
-    this.userName = '';
-  }
+  //onClickButton(event: Event) {
+  //  this.userName = '';
+  //}
 }
