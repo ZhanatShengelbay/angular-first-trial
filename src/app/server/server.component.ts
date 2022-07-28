@@ -23,10 +23,10 @@ export class ServerComponent {
   }
 
   onCreationServer() {
-    this.serverStatus = 'Server was created!';
+    this.serverStatus = 'Server was created! Now name is ' + this.serverName;
   }
-  onUpdateServer(event: any) {
-    console.log(event);
+  onUpdateServer(event: Event) {
+    this.serverName = (<HTMLInputElement>event.target).value;
   }
 
   ngOnInit() {}

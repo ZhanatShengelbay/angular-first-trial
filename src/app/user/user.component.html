@@ -1,0 +1,10 @@
+<h3>this is user area</h3>
+
+<input type="text" class="form-control" (input)="onTypeName($event)" />
+
+<p>this is username: "{{ userName }}"</p>
+
+<button class="btn btn-primary" [disabled]="!usernameStatus"></button>
+<!--[disabled]="onClickButton">-->
+
+<p>button status + {{ usernameStatus }}</p>
