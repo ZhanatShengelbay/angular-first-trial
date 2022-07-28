@@ -1,6 +1,14 @@
 <h3>It's SERVER-component aREA</h3>
 <h4>Now I can add other components into my baby-angular-project</h4>
 
+<label>Server name </label>
+
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="serverName">
+  <p>{{ serverName }}</p>
+  
 <button
   class="btn btn-primary"
   [disabled]="!allowNewServer"
